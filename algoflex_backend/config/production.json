@@ -1,0 +1,23 @@
+{
+    "production": {
+      "name": "Algoflex Backend - Production",
+      "port": 4200,
+      "mode": "production",
+      "protocol": "http",
+      "serverUrl": "",
+      "serverUrlWebUrlLink": "",
+      "database": {
+        "multipleStatements": true,
+        "host": "",
+        "user": "",
+        "password": "",
+        "database": ""
+      },
+      "email": {
+        "host": "",
+        "port": "",
+        "username": "",
+        "password": ""
+      }
+    }
+  }

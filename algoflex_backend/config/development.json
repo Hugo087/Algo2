@@ -1,0 +1,23 @@
+{
+    "development": {
+      "name": "Algoflex Backend - Dev",
+      "port": 4100,
+      "mode": "development",
+      "protocol": "http",
+      "serverUrl": "localhost",
+      "serverUrlWebUrlLink": "localhost:4100/",
+      "database": {
+        "multipleStatements": true,
+        "host": "",
+        "user": "",
+        "password": "",
+        "database": ""
+      },
+      "email": {
+        "host": "",
+        "port": "",
+        "username": "",
+        "password": ""
+      }
+    }
+  }

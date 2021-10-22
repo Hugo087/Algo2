@@ -1,0 +1,4 @@
+langservers:
+        cpp:
+            - ccls
+            - "--init={\"cache\": {\"directory\":\"/tmp/algoflex_autocomplete\",\"format\":\"json\"},\"index\":{\"onChange\":true,\"trackDependency\":2}}"
