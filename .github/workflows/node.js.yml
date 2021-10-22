@@ -12,6 +12,9 @@ on:
 jobs:
   build-frontend:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./algoflex_frontend
     strategy:
       matrix:
         node-version: [12.x, 14.x, 16.x]
@@ -23,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd algoflex_frontend
+        cache-dependency-path: algoflex_frontend/package-lock.json
     - run: npm ci
     - run: npm run build
     - run: npm test
