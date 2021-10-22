@@ -15,7 +15,10 @@ jobs:
     strategy:
       matrix:
         node-version: [12.x]
-        dir: ['./algoflex_frontend', './algoflex_backend', 'algoflex_autocomplete']
+        dir: ['algoflex_frontend', 'algoflex_backend', 'algoflex_autocomplete']
+    defaults:
+      run:
+        working-directory: ${{ matrix.dir }}
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
