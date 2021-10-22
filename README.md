@@ -1,6 +1,9 @@
 # Algoflex
 Projet Epitech Algoflex
 
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Hugo087_Algo2&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Hugo087_Algo2)
+
 ## Lancement Front-end : 
 
 npm run start
