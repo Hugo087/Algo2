@@ -17,6 +17,7 @@ export class BuildListener {
     private constructor(){
         this.dockerInstance = new Docker({socketPath: '/var/run/docker.sock'});
         this.hasExecuted = undefined;
+        this.COUILE = 3;
     }
 
     private async initialize(code: string){
