@@ -12,10 +12,12 @@ export class BuildListener {
     private compileContainer? : Docker.Container;
     private executeContainer? : Docker.Container;
     private hasExecuted?: boolean;
+    public COUILE: number;
 
     private constructor(){
         this.dockerInstance = new Docker({socketPath: '/var/run/docker.sock'});
         this.hasExecuted = undefined;
+        this.COUILE = 3;
     }
 
     private async initialize(code: string){
